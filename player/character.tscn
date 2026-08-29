@@ -4,6 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://cgqwkblkaat5v" path="res://Furniture/tv table/Table02.glb" id="2_74pxd"]
 [ext_resource type="PackedScene" uid="uid://tfwhx2aog606" path="res://Furniture/books/Books01.glb" id="3_xhlcg"]
 [ext_resource type="PackedScene" uid="uid://duxgud0p1lvcv" path="res://Furniture/bed/upholstered_bed__free_model.glb" id="4_sd8wt"]
+[ext_resource type="PackedScene" uid="uid://dpgrmeghu7u74" path="res://Furniture/fridge/house_props__fridge.glb" id="5_edx4p"]
+[ext_resource type="PackedScene" uid="uid://djqwonoo5oabj" path="res://Furniture/tv table/tv_bench__tv_table__tv_stand_wood.glb" id="6_jmpku"]
+[ext_resource type="PackedScene" uid="uid://cywudgxwqv0go" path="res://Furniture/chairs/Couch01.glb" id="7_afh3s"]
+[ext_resource type="PackedScene" uid="uid://0egbe8uvdstq" path="res://Furniture/plants/potted_plant.glb" id="8_22b1n"]
+[ext_resource type="PackedScene" uid="uid://bsjxi7hkg77lw" path="res://Furniture/plants/vase-with-tulip-and-plumeria-bouquet/source/mothers day bouquet.glb" id="9_m4kde"]
+[ext_resource type="PackedScene" uid="uid://bnvkqecqprm5j" path="res://Furniture/nintendo/nintendo_switch_console.glb" id="10_pnj0y"]
+[ext_resource type="PackedScene" uid="uid://ck41gfa17gvxw" path="res://Furniture/speaker/enceinte_focal_cms-50.glb" id="11_jx7c6"]
+[ext_resource type="PackedScene" uid="uid://c880w3tis1rgr" path="res://Furniture/tv table/tv.glb" id="12_d1s81"]
 
 [node name="day_1" type="Node3D" unique_id=18093999]
 
@@ -104,8 +112,32 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.546508, -0.004464507, 5.79
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=343191537]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.326151, 0.409729, -12.21405)
-size = Vector3(6.1289063, 1.819458, 1.236206)
+size = Vector3(6.129, 1.819, 1.354)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1794356696]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -11.800358, 0.409729, -9.935546)
-size = Vector3(6.1289063, 1.819458, 1.236206)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -11.724705, 0.39929962, -10.7146635)
+size = Vector3(4.541504, 1.819458, 1.3542175)
+
+[node name="Sketchfab_Scene2" parent="." unique_id=1895626173 instance=ExtResource("5_edx4p")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -11.655979, -0.0046100616, -7.871605)
+
+[node name="Sketchfab_Scene3" parent="." unique_id=109677288 instance=ExtResource("6_jmpku")]
+transform = Transform3D(-3.5842552e-07, 0, 2.2, 0, 2.2, 0, -2.2, 0, -3.5842552e-07, -7.586872, 0.51404953, -3.7655983)
+
+[node name="Couch012" parent="." unique_id=946249468 instance=ExtResource("7_afh3s")]
+transform = Transform3D(-1.7, 0, -2.5669289e-07, 0, 1.7, 0, 2.5669289e-07, 0, -1.7, -10.450855, -0.0036069117, -0.74007964)
+
+[node name="Sketchfab_Scene4" parent="." unique_id=1043453276 instance=ExtResource("8_22b1n")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -5.159896, -0.08777273, -3.7738671)
+
+[node name="mothers day bouquet" parent="." unique_id=366690394 instance=ExtResource("9_m4kde")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -9.145504, 0.9266157, -3.8186576)
+
+[node name="Sketchfab_Scene5" parent="." unique_id=2093708572 instance=ExtResource("10_pnj0y")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.528025, 1.7841775, -3.6775227)
+
+[node name="Sketchfab_Scene6" parent="." unique_id=1510545715 instance=ExtResource("11_jx7c6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.915617, 1.0313926, -3.8719068)
+
+[node name="Sketchfab_Scene7" parent="." unique_id=1531034940 instance=ExtResource("12_d1s81")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7.5232973, 0.77129936, -4.1098614)

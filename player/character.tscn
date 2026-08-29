@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://doy8bmm46egpj"]
+[gd_scene format=3 uid="uid://8pouqltt2ms5"]
 
 [ext_resource type="PackedScene" uid="uid://de2lsbk5he7km" path="res://low-poly-little-boy-horror/source/low_poly_little_boy_horror.glb" id="1_jq1i7"]
 [ext_resource type="PackedScene" uid="uid://cgqwkblkaat5v" path="res://Furniture/tv table/Table02.glb" id="2_74pxd"]

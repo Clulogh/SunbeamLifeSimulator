@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://doy8bmm46egpj"]
+
+[ext_resource type="PackedScene" uid="uid://bkcgns0jif73v" path="res://low-poly-little-boy-horror/source/little_boy_2.fbx" id="1_glpr6"]
+
+[node name="Node3D" type="Node3D" unique_id=18093999]
+
+[node name="little_boy_2" parent="." unique_id=2069283417 instance=ExtResource("1_glpr6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.020377398, 0, -0.118480444)

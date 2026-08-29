@@ -1,0 +1,148 @@
+[gd_scene load_steps=10 format=3 uid="uid://bxm4qtk3vhw2e"]
+
+[ext_resource type="PackedScene" uid="uid://cgqwkblkaat5v" path="res://Furniture/tv table/Table02.glb" id="1_74pxd"]
+[ext_resource type="PackedScene" uid="uid://tfwhx2aog606" path="res://Furniture/books/Books01.glb" id="2_xhlcg"]
+[ext_resource type="PackedScene" uid="uid://duxgud0p1lvcv" path="res://Furniture/bed/upholstered_bed__free_model.glb" id="3_sd8wt"]
+[ext_resource type="PackedScene" uid="uid://cr8n5wjy20fqd" path="res://player/player.tscn" id="4_p1ayr"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ycu6d"]
+sky_horizon_color = Color(0.66224, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.66224, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_c1v6l"]
+sky_material = SubResource("ProceduralSkyMaterial_ycu6d")
+
+[sub_resource type="Environment" id="Environment_h2n4d"]
+background_mode = 2
+sky = SubResource("Sky_c1v6l")
+tonemap_mode = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t4b1e"]
+size = Vector3(2, 0.73, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b3d5f"]
+size = Vector3(2.25, 1.51, 2.56)
+
+[node name="day_1" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_h2n4d")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.433012, 0, 6, 0)
+shadow_enabled = true
+
+[node name="floor" type="CSGBox3D" parent="."]
+transform = Transform3D(0.99524933, 0, 0.09735882, 0, 1, 0, -0.09735882, 0, 0.99524933, -10.401691, -0.17355537, 0.5923786)
+use_collision = true
+size = Vector3(230.68652, 0.33789063, 216.23828)
+
+[node name="wallhouse" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060838223, 3.0754719, -13.039861)
+use_collision = true
+size = Vector3(25.656, 6.33, 0.537)
+
+[node name="wallhouse2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060838223, 3.07547, 12.098525)
+use_collision = true
+size = Vector3(25.656, 6.33, 0.537)
+
+[node name="window" type="CSGBox3D" parent="wallhouse2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06888807, 0.59097147, -0.59688663)
+operation = 2
+size = Vector3(4.734375, 2.4132996, 2.0964355)
+
+[node name="wallhouse3" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12.499105, 3.0754719, -0.46384525)
+use_collision = true
+size = Vector3(25.656, 6.33, 0.537)
+
+[node name="door" type="CSGBox3D" parent="wallhouse3"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.015862, -1.1872673, -0.28857994)
+operation = 2
+size = Vector3(2.1132813, 4.5216064, 2.3283691)
+
+[node name="wallhouse4" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.628896, 3.0754719, -0.46384525)
+use_collision = true
+size = Vector3(25.656, 6.33, 0.537)
+
+[node name="wallroom" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.893705, 3.0754719, 3.4722104)
+use_collision = true
+size = Vector3(9.027672, 6.329712, 0.53723145)
+
+[node name="wallroom2" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.6430757, 3.0754719, 7.8125734)
+use_collision = true
+size = Vector3(9.028, 6.33, 0.537)
+
+[node name="door2" type="CSGBox3D" parent="wallroom2"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.3847904, -1.7189751, -0.31040025)
+operation = 2
+size = Vector3(2.1132813, 3.458191, 2.0323486)
+
+[node name="wallroom3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.76279, 3.0754719, 3.4722104)
+use_collision = true
+size = Vector3(9.027672, 6.329712, 0.53723145)
+
+[node name="wallroom4" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.5223196, 3.0754719, 4.223626)
+use_collision = true
+size = Vector3(16.205894, 6.33, 0.537)
+
+[node name="door2" type="CSGBox3D" parent="wallroom4"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.299958, -1.7189751, -0.3104)
+operation = 2
+size = Vector3(2.1132813, 3.458191, 2.0323486)
+
+[node name="door3" type="CSGBox3D" parent="wallroom4"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.929678, -1.7189751, -0.3104005)
+operation = 2
+size = Vector3(2.1132813, 3.458191, 2.0323486)
+
+[node name="wallroom5" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.76279, 3.0754719, -3.6186442)
+use_collision = true
+size = Vector3(9.027672, 6.329712, 0.53723145)
+
+[node name="table" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.93074, -0.00461, 6.752619)
+
+[node name="Model" parent="table" instance=ExtResource("1_74pxd")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.365, -2)
+shape = SubResource("BoxShape3D_t4b1e")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.470517, 0.14727306, 10.815742)
+use_collision = true
+radius = 0.31152344
+height = 1.6591797
+
+[node name="books" parent="." instance=ExtResource("2_xhlcg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.65758, 0.244863, 13.926424)
+
+[node name="bed" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.546508, -0.004464507, 5.797979)
+
+[node name="Model" parent="bed" instance=ExtResource("3_sd8wt")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bed"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.074, 0.753, -0.007)
+shape = SubResource("BoxShape3D_b3d5f")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.326151, 0.409729, -12.21405)
+use_collision = true
+size = Vector3(6.1289063, 1.819458, 1.236206)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -11.800358, 0.409729, -9.935546)
+use_collision = true
+size = Vector3(6.1289063, 1.819458, 1.236206)
+
+[node name="Player" parent="." instance=ExtResource("4_p1ayr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)

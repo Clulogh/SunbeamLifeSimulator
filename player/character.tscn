@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://doy8bmm46egpj"]
 
 [ext_resource type="PackedScene" uid="uid://de2lsbk5he7km" path="res://low-poly-little-boy-horror/source/low_poly_little_boy_horror.glb" id="1_jq1i7"]
-[ext_resource type="PackedScene" uid="uid://cgqwkblkaat5v" path="res://Furniture/Table02.glb" id="2_74pxd"]
-[ext_resource type="PackedScene" uid="uid://tfwhx2aog606" path="res://Furniture/Books01.glb" id="3_xhlcg"]
-[ext_resource type="PackedScene" uid="uid://duxgud0p1lvcv" path="res://Furniture/upholstered_bed__free_model.glb" id="4_sd8wt"]
+[ext_resource type="PackedScene" uid="uid://cgqwkblkaat5v" path="res://Furniture/tv table/Table02.glb" id="2_74pxd"]
+[ext_resource type="PackedScene" uid="uid://tfwhx2aog606" path="res://Furniture/books/Books01.glb" id="3_xhlcg"]
+[ext_resource type="PackedScene" uid="uid://duxgud0p1lvcv" path="res://Furniture/bed/upholstered_bed__free_model.glb" id="4_sd8wt"]
 
 [node name="day_1" type="Node3D" unique_id=18093999]
 

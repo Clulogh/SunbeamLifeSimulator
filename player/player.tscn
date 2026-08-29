@@ -7,20 +7,21 @@
 radius = 0.3
 height = 1.6
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" unique_id=1707009860]
 script = ExtResource("1_gk2fm")
 
-[node name="Model" parent="." instance=ExtResource("2_jq1i7")]
+[node name="Model" parent="." unique_id=1792889293 instance=ExtResource("2_jq1i7")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2103471482]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
 shape = SubResource("CapsuleShape3D_p8m2r")
 
-[node name="CameraPivot" type="Node3D" parent="."]
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1691913669]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
 
-[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot"]
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=916126451]
 transform = Transform3D(1, 0, 0, 0, 0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0)
 spring_length = 3.5
 
-[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D"]
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=1778623493]
+transform = Transform3D(1, 0, 0, 0, 0.9999997, 2.9802322e-08, 0, -2.9802322e-08, 0.9999997, 0, -0.11392403, 0.31300378)

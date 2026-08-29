@@ -101,3 +101,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.65758, 0.38479996, 13.926
 
 [node name="Sketchfab_Scene" parent="." unique_id=2118863913 instance=ExtResource("4_sd8wt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.546508, -0.004464507, 5.797979)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=343191537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.326151, 0.409729, -12.21405)
+size = Vector3(6.1289063, 1.819458, 1.236206)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1794356696]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -11.800358, 0.409729, -9.935546)
+size = Vector3(6.1289063, 1.819458, 1.236206)

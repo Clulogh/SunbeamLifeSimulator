@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c5lp02coidgk7"]
+
+[node name="day1" type="Node3D" unique_id=453781017]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1541655297]
